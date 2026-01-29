@@ -1,0 +1,54 @@
+
+
+<html>
+<head><title>simple quiz
+</title>
+<style>
+body{
+font-family:arial,
+sans-serif;
+background:#f4f4f4;
+padding:20px;}
+.quiz-box{
+background:white;
+padding:20px;
+max-width:500px;
+margin:auto;
+border-radius:8px;
+}
+button{
+margin-top:15px;
+padding:10px;
+width:100%;
+background:green;
+color:white;
+border:none;
+font-size:16px;
+cursor:pointer}</style>
+</head>
+<body>
+<div class="quiz-box">
+<h2>ICT QUIZ</h2>
+<p1>1.HTML stand for?</p1>
+<input type="radio" name="q1" value="a"><br>
+hyper text mark up languages<br>
+<input type="radio" name="q1" value="b">high text machine language<br>
+<input type="radio" name="q1" value="c">hello text more languages<br>
+<p>2.which tag is used for paragraph?</p>
+<input type="radio" name="q2" value="a">&lt;p&gt;<br>
+<input type="radio" name="q2" value="b">&lt;h1&gt;<br>
+<input type="radio" name="q2" value="c">&lt;div&gt;<br>
+<button onclick="checkAnswer()">submit</button>
+<p id="results"></p>
+</div>
+<script>
+function checkAnswer(){
+let score=0;
+let q1=document.querySelector('input[name="q1"]:checked;
+let q2=document.querySelector('input[name="q2"]:checked);
+if (q1 && q2.value==="a")score++;
+if (q2 && q2.value==="a")score++;
+document.getelementById("result").inner HTML="YOU SCORED"+score+"out of 2"}
+</script>
+</body>
+</html>
